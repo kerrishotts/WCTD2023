@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <title>Changing styles</title>
+    </head>
+
+    <body>
+        <p id="hello"></p>
+        <p id="temp"></p>
+        <script>
+            const hello = document.getElementById("hello");
+            hello.textContent = "Hello, World!";
+
+            /* Instead of CSS like "font-weight", in JS you
+               use camel case, so "fontWeight".
+
+               You could also set the CSS class by using
+               className instead of style.
+             */
+            hello.style.fontWeight="bold";
+
+            const temp = document.querySelector("#temp");
+            const degreesF = 40;
+            if (degreesF > 80) {
+                temp.textContent = `${degreesF}°F is hot`;
+                temp.style.color = "red";
+            } else if (degreesF < 50) {
+                temp.textContent = `${degreesF}°F is cold`;
+                temp.style.color = "blue";
+            } else {
+                temp.textContent = `${degreesF}°F is just right`;
+            }
+        </script>
+    </body>
+
+</html>

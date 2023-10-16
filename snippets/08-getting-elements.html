@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <title>Getting elements</title>
+    </head>
+
+    <body>
+        <p id="hello"></p>
+        <p id="temp"></p>
+        <script>
+            const hello = document.getElementById("hello");
+            hello.textContent = "Hello, World!";
+
+            const temp = document.querySelector("#temp");
+            const degreesF = 40;
+            if (degreesF > 80) {
+                temp.textContent = `${degreesF}°F is hot`;
+            } else if (degreesF < 50) {
+                temp.textContent = `${degreesF}°F is cold`;
+            } else {
+                temp.textContent = `${degreesF}°F is just right`;
+            }
+        </script>
+    </body>
+
+</html>
