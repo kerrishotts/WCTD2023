@@ -8,6 +8,15 @@
     <body>
         <div id="myplot"></div>
         <script type="module">
+            /* a ready function */
+            function ready(fn) {
+                if (document.readyState !== "loading") {
+                    fn();
+                } else {
+                    document.addEventListener("DOMContentLoaded", fn);
+                }
+            }
+
             import * as Plot from "https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6/+esm";
 
             /* sourced from https://weatherspark.com/y/21872/Average-Weather-in-Maryland-City-Maryland-United-States-Year-Round */
@@ -35,9 +44,11 @@
                     Plot.lineY(averageMonthlyTemps, {x: "month", y: "low", stroke: "blue"})
                 ]
             })
-            const div = document.querySelector("#myplot");
 
-            div.append(plot);
+            ready(() => {
+                const div = document.querySelector("#myplot");
+                div.append(plot);
+            })
 
         </script>
     </body>
