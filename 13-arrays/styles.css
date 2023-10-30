@@ -1,0 +1,12 @@
+.golf-scorecard th:first-child {
+    text-align: right;
+}
+
+.golf-scorecard .hole-pars {
+    text-align: center;
+}
+
+.golf-scorecard input {
+    width: 3em;
+    text-align: center;
+}

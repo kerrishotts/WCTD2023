@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Arrays</title>
+        <link href="./styles.css" rel="stylesheet"/>
+    </head>
+
+    <body>
+        <h1>Golf Scorecard</h1>
+        <form id="scores">
+            <table id="scoreTable" class="golf-scorecard">
+                <thead>
+                    <tr class="hole-numbers"><th>Hole #</th><!-- hole numbers will go here --></tr>
+                </thead>
+                <tbody>
+                    <tr class="hole-pars"><th>Par</th><!-- par will go here --></tr>
+                    <tr class="hole-strokes"><th>Strokes</th><!-- scores will go here --></tr>
+                </tbody>
+            </table>
+            <button type="submit">Calculate score</button>
+            <div>
+            Your score is:
+            <div class="total-score"></div>
+            </div>
+        </form>
+        <script type="module" src="index.js"></script>
+    </body>
+
+</html>
