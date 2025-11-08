@@ -1,0 +1,23 @@
+{
+  "name": "wctd2023",
+  "version": "1.0.0",
+  "description": "Samples for We Connect The Dots Intermediate JavaScript course",
+  "homepage": "https://github.com/kerrishotts/WCTD2023#readme",
+  "bugs": {
+    "url": "https://github.com/kerrishotts/WCTD2023/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kerrishotts/WCTD2023.git"
+  },
+  "license": "MIT",
+  "author": "Kerri Shotts",
+  "type": "commonjs",
+  "main": "index.html",
+  "scripts": {
+    "start": "servor --reload"
+  },
+  "dependencies": {
+    "servor": "^4.0.2"
+  }
+}
