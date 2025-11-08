@@ -9,7 +9,7 @@ import { ready } from "../common/ready.js";
  * returns {Number} the sum of the array
  */
 function sum(arr) {
-    return arr.reduce((sum, current) => sum += current, 0);
+    return arr.reduce((sum, current) => sum + current, 0);
 }
 
 /**
