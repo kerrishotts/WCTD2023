@@ -31,7 +31,7 @@ function encode(text) {
 
 async function getHistoricalWeatherData({
     latitude = "40.7143", longitude = "-74.006", 
-    startDate = "2022-01-01", endDate="2022-12-31",
+    startDate = "2023-01-01", endDate="2023-12-31",
     dailyParameters=["temperature_2m_max", "temperature_2m_min"],
     units = {
         temperature: "fahrenheit",
